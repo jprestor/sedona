@@ -224,6 +224,7 @@ body {
 	padding-bottom: 32px;
 	background: #766357;
 	margin: 0 auto;
+	text-transform: uppercase;
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
@@ -232,12 +233,23 @@ body {
 
 .search-map {
 	min-height: 474px;
+	overflow: hidden;
 	background: url(../img/map.png) no-repeat center center;
 }
 
+/*js */
+.form--closed {
+	transform: translateY(-100%);
+	transition: 0.8s ease;
+}
+.form--opened {
+	transform: translateY(0%);
+}
 
+.form--nojs {
+	transform: translateY(0%);
+}
 /* ФОРМА  */
-
 form {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -306,6 +318,8 @@ input {
 	text-align: center;
 	background: #81b3d2;
 	color: #fff;
+	border: none;
+	text-transform: uppercase;
 	font-size: 21px;
 	cursor: pointer;
 }
@@ -859,3 +873,5 @@ input[type="checkbox"]:checked+label::before {
 	padding: 4px 15px;
 	background: #f2f2f2;
 }
+
+
